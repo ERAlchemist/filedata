@@ -1,0 +1,24 @@
+﻿2019-03-06 00:21:17.925 T:140525661582272  NOTICE: -----------------------------------------------------------------------
+2019-03-06 00:21:17.925 T:140525661582272  NOTICE: Starting Kodi (18.1 Git:20190217-8cfdc89). Platform: Linux x86 64-bit
+2019-03-06 00:21:17.926 T:140525661582272  NOTICE: Using Release Kodi x64 build
+2019-03-06 00:21:17.926 T:140525661582272  NOTICE: Kodi compiled 2019-02-17 by GCC 7.3.0 for Linux x86 64-bit version 4.15.18 (266002)
+2019-03-06 00:21:17.926 T:140525661582272  NOTICE: Running on Ubuntu 18.04.2 LTS, kernel: Linux x86 64-bit version 4.15.0-45-generic
+2019-03-06 00:21:17.926 T:140525661582272  NOTICE: FFmpeg version/source: 4.0.3-Kodi
+2019-03-06 00:21:17.926 T:140525661582272  NOTICE: Host CPU: AMD FX(tm)-6350 Six-Core Processor, 6 cores available
+2019-03-06 00:21:17.926 T:140525661582272  NOTICE: special://xbmc/ is mapped to: /usr/share/kodi
+2019-03-06 00:21:17.926 T:140525661582272  NOTICE: special://xbmcbin/ is mapped to: /usr/lib/x86_64-linux-gnu/kodi
+2019-03-06 00:21:17.926 T:140525661582272  NOTICE: special://xbmcbinaddons/ is mapped to: /usr/lib/x86_64-linux-gnu/kodi/addons
+2019-03-06 00:21:17.926 T:140525661582272  NOTICE: special://masterprofile/ is mapped to: /home/eric/.kodi/userdata
+2019-03-06 00:21:17.926 T:140525661582272  NOTICE: special://envhome/ is mapped to: /home/eric
+2019-03-06 00:21:17.926 T:140525661582272  NOTICE: special://home/ is mapped to: /home/eric/.kodi
+2019-03-06 00:21:17.926 T:140525661582272  NOTICE: special://temp/ is mapped to: /home/eric/.kodi/temp
+2019-03-06 00:21:17.926 T:140525661582272  NOTICE: special://logpath/ is mapped to: /home/eric/.kodi/temp
+2019-03-06 00:21:17.926 T:140525661582272  NOTICE: The executable running is: /usr/lib/x86_64-linux-gnu/kodi/kodi-x11
+2019-03-06 00:21:17.926 T:140525661582272  NOTICE: Local hostname: Hub
+2019-03-06 00:21:17.926 T:140525661582272  NOTICE: Log File is located: /home/eric/.kodi/temp/kodi.log
+2019-03-06 00:21:17.926 T:140525661582272  NOTICE: -----------------------------------------------------------------------
+2019-03-06 00:21:17.928 T:140525661582272    INFO: loading settings
+2019-03-06 00:21:17.928 T:140525661582272   ERROR: CProfileManager: error loading special://masterprofile/profiles.xml, Line 0
+                                            Failed to open file
+2019-03-06 00:21:17.928 T:140525661582272  NOTICE: special://profile/ is mapped to: special://masterprofile/
+2019-03-06 00:21:17.928 T:140525661582272   FATAL: unable to load profile

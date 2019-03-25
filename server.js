@@ -1,23 +1,45 @@
-'use strict';
-
 var express = require('express');
-var cors = require('cors');
+var path = require('path');
+//var favicon = require('serve-favicon');
+var logger = require('morgan');
+var cookieParser = require('cookie-parser');
+var bodyParser = require('body-parser');
+var log = require('npmlog');
 
-// require and use "multer"...
+var index = require('./routes/index');
 
 var app = express();
 
-app.use(cors());
-app.use('/public', express.static(process.cwd() + '/public'));
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'hjs');
 
-app.get('/', function (req, res) {
-     res.sendFile(process.cwd() + '/views/index.html');
-  });
+app.use(logger('dev'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/hello', function(req, res){
-  res.json({greetings: "Hello, API"});
+app.use('/', index);
+
+
+app.use(function(req, res, next) {
+  var err = new Error('Not Found');
+  err.status = 404;
+  next(err);
 });
 
-app.listen(process.env.PORT || 3000, function () {
-  console.log('Node.js listening ...');
+// error handler
+app.use(function(err, req, res, next) {
+  // set locals, only providing error in development
+  res.locals.message = err.message;
+  res.locals.error = req.app.get('env') === 'development' ? err : {};
+
+  // render the error page
+  res.status(err.status || 500);
+ // res.render('error');
 });
+var port = process.env.PORT || 5000;
+app.listen(port, function() {
+  log.info('Express', 'Listening on port %s', port);
+});
+module.exports = app;
